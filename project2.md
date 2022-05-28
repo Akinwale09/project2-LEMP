@@ -173,7 +173,21 @@ server {
 
 `<?php phpinfo();`
 
+![Php file](images/phpinfo.png)
+
 #### I now access this page in my web browser by visiting the domain name or public IP address I set up in my Nginx configuration file, followed by /info.php:
+
+#### After cheaking I remove the file with the v]bolow comand: 
+
+`sudo rm /var/www/your_domain/info.php`
+
+![PG Remove](images/pgremove.png)
+
+
+## STEP 6 – RETRIEVING DATA FROM MYSQL DATABASE WITH PHP (CONTINUED)
+
+
+
 
 
 
