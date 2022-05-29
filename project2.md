@@ -200,6 +200,89 @@ server {
 
 ![New Database](images/newdatabase.png)
 
+#### Now I create a new user and grant him full privileges on the database I just created with the following command
+
+`CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+
+![New User](images/usercreated.png)
+
+#### Now I give this user permission over the example_database database:
+
+`GRANT ALL ON example_database.* TO 'example_user'@'%';`
+
+![Access](images/access.png)
+
+#### This give the example_user user full privileges over the example_database database, while preventing this user from creating or modifying other databases on my server. I Now exit the MySQL shell with:
+
+`exit`
+
+![Exit](images/exitt.png)
+
+#### Now I test if the new user has the proper permissions by logging in to the MySQL console again, this time using the custom user credentials:
+
+`mysql -u example_user -p`
+
+![Login](images/userlogin.png)
+
+#### After logging in to the MySQL console, I confirm that I have access to the example_database database:
+
+`mysql> SHOW DATABASES;`
+
+![Show Database](images/showdatabase.png)
+
+#### Next, I create a test table named todo_list. From the MySQL console, I run the following statement:
+
+`CREATE TABLE example_database.todo_list(item_id INT AUTO_INCREMENT, content VARCHAR(255), PRIMARY KEY(item_id)); `
+
+![Table](images/tablecreated.png)
+
+#### I Insert a few rows of content in the test table. 
+
+`INSERT INTO example_database.todo_list (content) VALUES ("My first important item");`
+
+![Table Insert](images/insert.png)
+
+
+#### I confirm that the data was successfully saved to my table, I run:
+
+`SELECT * FROM example_database.todo_list;`
+
+![Insert Item](images/item.png)
+
+#### After confirming that I have valid data in my test table, I exit the MySQL console:
+
+`exit`
+
+#### Now I can create a PHP script that will connect to MySQL and query for my content. I Create a new PHP file in my custom web root directory using my preferred editor.
+
+`nano /var/www/projectLEMP/todo_list.php`
+
+![Content](content.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
