@@ -192,7 +192,17 @@ server {
 #### I connect to the MySQL console using the root account:
 `sudo mysql -p`
 
-![Database connection](images/pgremovedatabaseconnection.png)
+![Database connection](images/databaseconnection.png)
+
+#### I create a new database, I run the following command from your MySQL console:
+
+`mysql> CREATE DATABASE `example_database`;`
+
+![New Database](images/newdatabase.png)
+
+
+
+
 
 
 
