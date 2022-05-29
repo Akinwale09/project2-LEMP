@@ -257,7 +257,19 @@ server {
 
 `nano /var/www/projectLEMP/todo_list.php`
 
-![Content](content.png)
+![Content](images/content.png)
+
+#### My final todo list page
+
+![My todo List](images/todolist.png)
+
+
+
+
+
+
+
+
 
 
 
