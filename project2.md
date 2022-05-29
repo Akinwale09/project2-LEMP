@@ -186,6 +186,18 @@ server {
 
 ## STEP 6 – RETRIEVING DATA FROM MYSQL DATABASE WITH PHP (CONTINUED)
 
+#### In this step I will create a test database (DB) with simple "To do list" and configure access to it, so the Nginx website would be able to query data from the DB and display it.
+
+
+#### I connect to the MySQL console using the root account:
+`sudo mysql -p`
+
+![Database connection](images/pgremovedatabaseconnection.png)
+
+
+
+
+
 
 
 
