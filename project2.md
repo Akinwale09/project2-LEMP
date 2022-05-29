@@ -261,7 +261,9 @@ server {
 
 #### My final todo list page
 
-![My todo List](images/todolist.png)
+![My todo List](images/list.png)
+
+
 
 
 
